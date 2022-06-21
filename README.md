@@ -1,8 +1,4 @@
 # Take payments IRL with Solana Pay
-
-Code for [Pointer Solana Pay Tutorial](pointer.gg/tutorials/solana-pay-irl-payments)
-# solana-pay-tut-nft-loyalty-picNFT
-# solana-pay-tut-nft-loyalty-picNFT
-# solana-pay-tut-nft-loyalty-picNFT
+# also mint NFT's and Loyalty coupons for customers after ordering at your store
 # solana-pay-tutorial-loyalty-customerPicNFT
 # solana-pay-tutorial-loyalty-customerPicNFT
