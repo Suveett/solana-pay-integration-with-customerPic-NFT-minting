@@ -4,3 +4,5 @@ Code for [Pointer Solana Pay Tutorial](pointer.gg/tutorials/solana-pay-irl-payme
 # solana-pay-tut-nft-loyalty-picNFT
 # solana-pay-tut-nft-loyalty-picNFT
 # solana-pay-tut-nft-loyalty-picNFT
+# solana-pay-tutorial-loyalty-customerPicNFT
+# solana-pay-tutorial-loyalty-customerPicNFT
