@@ -28,8 +28,8 @@ interface MyAppProps extends AppProps {
 }
 
 
-function MyApp({ Component, pageProps, host }: MyAppProps) {
-  const baseUrl = `https://${host}`;
+function MyApp({ Component, pageProps}: AppProps) {
+  //const baseUrl = `https://${host}`;
   
   // The network can be set to 'devnet', 'testnet', or 'mainnet-beta'.
   const network = WalletAdapterNetwork.Devnet;
@@ -55,29 +55,28 @@ function MyApp({ Component, pageProps, host }: MyAppProps) {
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
-        <ConfigProvider baseUrl={baseUrl}>
+        
           <Layout>
             <Head>
               <title>Ardor 2.1- Thali Kings</title>
             </Head>
             <Component {...pageProps} />
           </Layout>
-          </ConfigProvider>
+         
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
   )
 }
 
-MyApp.getInitialProps = async (appContext: AppContext) => {
-  const props = await NextApp.getInitialProps(appContext);
-  const { req } = appContext.ctx;
-  const host = req?.headers.host || "localhost:3000";
+// MyApp.getInitialProps = async (appContext: AppContext) => {
+//   const props = await NextApp.getInitialProps(appContext);
+//   const { req } = appContext.ctx;
+//   const host = req?.headers.host || "localhost:3000";
 
-  return {
-    ...props,
-    host,
-  };
-};
+//   return {
+//     ...props,
+//     host,
+//   };
+// };
 export default MyApp
-
